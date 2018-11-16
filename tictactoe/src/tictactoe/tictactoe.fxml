@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="grid" alignment="center" hgap="2" prefHeight="94.0" prefWidth="94.0" style="-fx-background-color: black;" vgap="2" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.Controller">
+   <rowConstraints>
+      <RowConstraints minHeight="30.0" prefHeight="30.0" />
+      <RowConstraints minHeight="30.0" prefHeight="30.0" />
+      <RowConstraints minHeight="30.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+      <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+      <ColumnConstraints minWidth="30.0" prefWidth="30.0" />
+   </columnConstraints>
+   <children>
+      <Pane prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white" />
+      <Pane prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white" GridPane.columnIndex="1" />
+      <Pane prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white" GridPane.columnIndex="2" />
+      <Pane prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white" GridPane.rowIndex="1" />
+      <Pane prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Pane prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Pane prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white" GridPane.rowIndex="2" />
+      <Pane prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Pane prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: white" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
