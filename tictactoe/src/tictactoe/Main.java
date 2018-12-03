@@ -10,9 +10,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("tictactoe.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("calosc.fxml"));  // Laduje startowy ekran z pliku calosc.fxml
         primaryStage.setTitle("Tic-Tac-Toe");
-        primaryStage.setScene(new Scene(root, 94, 94));
+        primaryStage.setScene(new Scene(root, 188, 94));
         primaryStage.show();
     }
 

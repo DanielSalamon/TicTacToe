@@ -121,27 +121,30 @@ public class Board {
         return winner;
     }
 
-	public void makeComputerMove() {
-		if(hasEmptyFields()) {
-			int row = new Random().nextInt(3);
-			int column = new Random().nextInt(3);
-			while(board[row][column] != null) {
-				row = new Random().nextInt(3);
-				column = new Random().nextInt(3);
-			}
-			makeMove(row, column);
-		}
-	}
+    public void makeComputerMove() {
+        if (hasEmptyFields()) {
+            int row = new Random().nextInt(3);
+            int column = new Random().nextInt(3);
+            while (board[row][column] != null) {
+                row = new Random().nextInt(3);
+                column = new Random().nextInt(3);
+            }
+            makeMove(row, column);
+        }
+    }
 
-	private boolean hasEmptyFields() {
-		for (int i = 0; i <= 2; i++) {
-			for (int j = 0; j <= 2; j++) {
-				if(board[i][j] == null) {
-					return true;
-				}
-			}
-		}
-		return false;
-	}
+    private boolean hasEmptyFields() {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (board[i][j] == null) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
+    public boolean canYouMakeAMove(Integer row, Integer column) {
+        return getPlayerForField(row, column) == null;
+    }
 }
